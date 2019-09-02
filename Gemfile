@@ -2,8 +2,13 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
+#jquery 解决下拉框无反应的问题
+gem 'jquery-rails'
+# 用户登录验证
 gem 'devise'
+# 表格简化
 gem 'simple_form'
+# bootstrap-scss文件生成
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
