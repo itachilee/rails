@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
+# 分页
+gem 'will_paginate'
 #jquery 解决下拉框无反应的问题
 gem 'jquery-rails'
 # 用户登录验证
