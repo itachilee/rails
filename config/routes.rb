@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 	# 账户设定
 	namespace :account do
 		resources :groups
+		resources :posts
 	end
 	# 首页路径设定
 	root 'groups#index'	      
