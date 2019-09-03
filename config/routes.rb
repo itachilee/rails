@@ -17,6 +17,10 @@ Rails.application.routes.draw do
 			get :hot
 		end
 	end
+	# 账户设定
+	namespace :account do
+		resources :groups
+	end
 	# 首页路径设定
 	root 'groups#index'	      
 	
