@@ -10,13 +10,8 @@ Rails.application.routes.draw do
 		resources :posts
 	end
 #	root 'welcome#index'	
-	# posts 文章资源
-	resources :post do 
-		# 热门
-		collection do
-			get :hot
-		end
-	end
+	# post
+	resources :posts 
 	# 账户设定
 	namespace :account do
 		resources :groups
