@@ -31,6 +31,12 @@ class PostsController < ApplicationController
 			render :edit
 		end
 	end
+	# 删除文章
+	def destroy
+		@post =Post.find(params[:id])
+		@post.destroy
+		redirect_to account_posts_path,notice:"deleted success"
+	end	
 	private
 	def post_params
 		params.require(:post).permit(:content)
