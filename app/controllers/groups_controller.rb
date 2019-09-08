@@ -7,6 +7,7 @@ class GroupsController < ApplicationController
 	def new 
 		@group = Group.new
 	end
+	# create a new group with save 
 	def create 
 		@group = Group.new(group_params)
 		@group.user = current_user
