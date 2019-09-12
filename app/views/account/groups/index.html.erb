@@ -11,15 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @group.each do |group| %>
-        <tr>
-          <td> # </td>
-          <td> <%= link_to(group.title, group_path(group)) %> </td>
-          <td> <%= group.descriptioon %> </td>
-          <td> <%= group.posts.count %> </td>
-          <td> <%= group.updated_at %> </td>
-        </tr>
-      <% end %>
+      <%= render "group_item" %>
     </tbody>
   </table>
 </div>

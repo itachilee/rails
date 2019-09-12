@@ -3,6 +3,6 @@ class Account::GroupsController < ApplicationController
 	before_action :authenticate_user!
 	# 只允许查看用户以及加入的板块
 	def index
-		@group = current_user.participated_groups
+		@groups = current_user.participated_groups
 	end
 end

@@ -7,7 +7,7 @@ gem 'will_paginate'
 #jquery 解决下拉框无反应的问题
 gem 'jquery-rails'
 # 用户登录验证
-gem 'devise'
+gem 'devise','~> 4.7.1'
 # 表格简化
 gem 'simple_form'
 # bootstrap-scss文件生成
